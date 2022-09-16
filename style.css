@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@font-face {
+  font-family: 'nebula-regular';
+  src: url('font/nebula-regular-webfont.woff') format('woff');
+
+
+}
+
+@font-face {
+  font-family: 'nebula-hollow';
+  src: url('font/nebula-hollow-webfont.woff') format('woff') ;
+}
+
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-@font-face {
-  font-family: 'dashearly';
-  src: url('font/dash-early-webfont.woff2') format('woff2'),
-       url('font/dash-early-webfont.woff') format('woff');
-
 
 }
 
@@ -31,6 +35,8 @@ header .logo
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: 'nebula-regular';
+
 }
 .toggle
 {
@@ -96,23 +102,52 @@ header .logo
   z-index: 10;
 }
 
+  .inter
+{
+  font-family: 'nebula-regular';
+  color: #fff;
+  margin-right: 25%;
+}
 .text h2
 {
-  font-family: 'dashearly';
+  font-family: 'nebula-hollow';
   font-size: 200px;
-  color: rgb(27, 228, 0);
+  color: #fff;
   line-height: 1em;
   text-align: center;
-  
+  margin: 0;
+  padding: 0;
 }
 .text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #ffff;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: nebula-hollow;
+  position: absolute;
+  top: 520px;
+  left:1550px;
+  z-index: 10;
+  transform: rotate(90deg);
+}
+
+/*.textAboutMe h3
 {
   font-size: 4em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
-}
+  font-family: nebula-hollow;
+  position: absolute;
+  top: 700px;
+  left: 1750px;
+  z-index: 10;
+  transform: rotate(90deg);
+  width: 600px;
+}*/
 
 .text a:hover
 {
@@ -145,6 +180,7 @@ header .logo
 }
 .menu
 {
+  font-family: nebula-regular;
   position: absolute;
   top: 0;
   right: 0;
@@ -165,12 +201,12 @@ header .logo
 .menu ul li a
 {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 28px;
   color: #111;
 }
 .menu ul li a:hover
 {
-  color: rgb(27, 228, 0) ; 
+  color: orange ; 
 }
 
 @media (max-width: 991px)

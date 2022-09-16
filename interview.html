@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Yanis Lemfadli-Prefo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+          <h2 class="logo">Yanis Lemfadli</h2>
+          <div class="toggle"></div>
+        </header>
+        <video src="MARS4.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h3>Interview</h3> 
+        <div class="inter">
+          <h4>Comment s’organise un journée type ?</h4>
+          <p>En général, je commence à travailler à 8h. En début de matinée nous faisons des codes review (regarde mon code, celui de mes collègues et de mon équipe). Après ça nous faisons un meeting avec les membres de mon équipe pour parler des différentes problématiques, quand cela est fait le reste de la journée est consacré au développement et/ou réalisation des tickets (tâches à accomplir dans un projet). Souvent nous réalisons des « POC » (Proof Of Concept) cela signifie : réalisation ayant pour vocation de montrer la faisabilité d'un procédé ou d'une innovation sur un projet.</p>
+          <h4>Où et depuis quand exercez-vous ce métier ?</h4>
+          <p>J’exerce chez Odoo de Louvain-La-Neuve depuis 1 an et demi.</p>
+          <h4>Y a-t-il des demandes ou projets que vous refusez ? si oui, pourquoi ? </h4>
+          <p>Chez Odoo on essaye de toujours respecter les valeurs qu’on retrouve initialement dans le produit. Si jamais la demande du client s’éloigne trop de nos valeurs initiales nous lui refusons le développement du projet.</p>
+          <h4>Est-ce que la profession aujourd’hui est la même qu’à vos débuts ? </h4>
+          <div>Je suis réellement dans le métier que depuis 1 an et demi donc je ne pense pas que celle-ci est pu changer en aussi peu de temps.</div>
+          <h4>Si vous deviez définir 3 soft skills d’un bon développeur et 3 hard skills indispensable pour devenir un bon WebDev ?</h4>
+          <div><h5>Soft skills :</h5>
+            <ul><li>La communication</li>
+                  <li>Etre curieux </li>
+                  <li>Aimer apprendre</li>
+                </ul></div>
+                <div><h5>Hard skills :</h5>
+                  <ul><li>Avoir un minimum de connaissance technique</li>
+                        <li>Se débrouiller avec un ou plusieurs langages de programmation </li>
+                        <li>Etre à l’aise avec les architecture web</li>
+                      </ul></div>
+          <h4>Avez-vous eu des difficultés as trouver une place en tant que webdev ? </h4>
+          <p>Travailler en équipe car quand on apprend on est souvent seul mais quand on passe dans une équipe de 4 ou 5 sur un seul projet ça devient plus compliquer au début.</p>
+          <h4>Qu’est-ce qui vous animes vous motive tous les jours à aller travailler le matin ? </h4>
+          <p>J’aime mon travail, le développement informatique fait partie de mes passions donc c’est avec un grand plaisir que je me réveil pour aller au travail.</p>
+          <h4>Quels sont les avantages pour dans votre métier </h4>
+          <p>Les horaires assez flexible, métier qui ne demande pas trop d’interaction avec le client.</p>
+          <h4>Et en fin quels conseils pourriez-vous me donner avec votre bagage qui pourrait m’aider à débuter dans ce domaine en tant que future Webdev ? </h4>
+          <p>Trouver rapidement une expérience professionnel que ce soit des stages ou emplois pour réellement appliquer ce qu’il a appris.</p>
+        </div>
+        </div>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exibition.html">Exibition</a></li>
+          <li><a href="interview.html">Interview</a></li>
+        </ul>
+      </div>
+      <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', ()=>{
+          menuToggle.classList.toggle('active')
+          showcase.classList.toggle('active')
+        })
+      </script>
+</body>
+</html>
