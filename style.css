@@ -68,7 +68,7 @@ header .logo
   justify-content: space-between;
   align-items: center;
   background: #111;
-  transition: 1.0s;
+  transition: 0.7s;
   z-index: 2;
 }
 .showcase.active
@@ -96,18 +96,107 @@ header .logo
   background: var(--overlay-color);
   mix-blend-mode: overlay;
 }
+.exhib h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #ffff;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: nebula-hollow;
+  position: absolute;
+  top: 610px;
+  left: 1520px;
+  z-index: 10;
+  transform: rotate(90deg);
+}
+.exhib
+{
+  font-family: 'nebula-hollow';
+  font-size: 20px;
+  color: #fff;
+  line-height: 1em;
+  text-align: justify;
+  padding: 15;
+  z-index: 100000;
+}
+.exhib ul li
+{
+  margin-left: 20px;
+}
 .text
 {
   position: relative;
   z-index: 10;
 }
 
-  .inter
+.inter
 {
   font-family: 'nebula-regular';
   color: #fff;
-  margin-right: 25%;
+  text-align: justify;
+  background-color: #977757; opacity: 0.6;
+  border-radius: 5%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-right: 80px;
 }
+
+.text-exhib
+{
+  font-family: 'nebula-regular';
+  color: #fff;
+  margin-right: 200px;
+  text-align: justify;
+  background-color: #977757; opacity: 0.8;
+  border-radius: 6%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 170px;
+  padding-bottom: 15px;
+  z-index: 1000;
+}
+.text-exhib p{
+  opacity: 1
+}
+.text-exhib h4
+{
+  font-family: 'nebula-hollow';
+  font-size: 1em;
+}
+  
+.text-inter
+{
+  font-family: 'nebula-hollow';
+  font-size: 20px;
+  color: #ffff;
+  line-height: 1em;
+  text-align: center;
+  padding: 15;
+  z-index: 1000;
+}
+.text-inter h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #ffff;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: nebula-hollow;
+  position: absolute;
+  top: 610px;
+  left: 1513px;
+  z-index: 10000;
+  transform: rotate(90deg);
+}
+
+.text-inter h4
+{
+  font-family: 'nebula-hollow';
+  font-size: 1em;
+}
+
 .text h2
 {
   font-family: 'nebula-hollow';
@@ -118,37 +207,11 @@ header .logo
   margin: 0;
   padding: 0;
 }
-.text h3
+
+.inter ul li
 {
-  font-size: 4em;
-  font-weight: 700;
-  color: #ffff;
-  line-height: 1em;
-  text-transform: uppercase;
-  font-family: nebula-hollow;
-  position: absolute;
-  top: 520px;
-  left:1550px;
-  z-index: 10;
-  transform: rotate(90deg);
+  margin-left: 20px;
 }
-
-/*.textAboutMe h3
-{
-  font-size: 4em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-  font-family: nebula-hollow;
-  position: absolute;
-  top: 700px;
-  left: 1750px;
-  z-index: 10;
-  transform: rotate(90deg);
-  width: 600px;
-}*/
-
 .text a:hover
 {
   letter-spacing: 6px;
@@ -225,4 +288,99 @@ header .logo
     font-size: 2em;
   }
 
+  *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+}
+h1 {
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+  /* PICTURES */
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+    z-index: 100;
+}
+.galerie h3{
+  font-size: 4em;
+  font-weight: 700;
+  color: #ffff;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: nebula-hollow;
+  position: absolute;
+  top: 610px;
+  left: 1590px;
+  z-index: 10000;
+  transform: rotate(90deg);
+}
+.item {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.item img {
+    width: 100%;
+    height: auto;
+}
+/* carte*/
+.a-box {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+}
+
+.img-container {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.img-container img {
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    margin: -35px 0px 0px -70px;
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 250px;
+    width: 200px;
+}
+
+.text-container {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.text-container h3 {
+  margin: 20px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
 }

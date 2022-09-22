@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanis Lemfadli-Prefo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Yanis Lemfadli</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="MARS3.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="exhib">
+      <h3>Exhibition</h3>
+      <div class="text-exhib">
+        <div>
+          <br><br>
+          <h4>Rapport de la mission de reconnaissance :</h4><br>
+          <p>Nous nous sommes rendu ce lundi 29/08/2022 au 4 Place Royale à 1000 Bruxelles, où ce trouvait l’exposition
+            "Bruxelles Expérience". Nous avons été
+            accueillis par une gentille hôtesse de type humain. Celle-ci nous a ensuite invité à la suivre jusqu’à la
+            salle où ce trouvait le maître du jeu car oui en effet l’exposition est sous forme de jeux de société où les
+            équipes sont différenciées par des couleurs et des différents pion représentant des monuments ou des
+            références à la culture belge. Suite à ça, nous avons dû parcourir le musée à fin de pouvoir répondre aux
+            questionnaires qui une fois finis nous donnaient accès aux questionnaires suivant jusqu’à arriver au dernier
+            qui menait à la victoire. Après cela nous avons eu un peu de temps pour interagir avec les différentes
+            animations qu’il y avait tel que ;</p><br>
+          <ul>
+            <li>Prise de photos sur fond vert, </li>
+            <li>Interaction avec une maquette à échelle impressionnante de la ville de Bruxelles,</li>
+            <li>Audios,… </li>
+          </ul><br>
+
+
+          <p>Après cella, l’équipage du cf-2000 prirent un moment pour se restaurer avant de retourner à la base pour se
+            préparer à la prochaine mission du First Project nommé « interview ».</p><br>
+          <h4>Bilan de la mission pré-formation</h4><br>
+          <p>Pour ma part j’aime beaucoup cette formation, en seulement 5 semaines j’ai eu l’occasion de bien revoir HTML et CSS ce qui m’a permis de consolider mes bases.
+Pour l’instant mes cours favoris sont Algorithme et Git/GitHub. Les professeurs sont gentils et pédagogues ce qui me met à l’aise pour la suite de la formation.
+</p>
+          <p>Concernant l’interview Killian Frappart a su me motiver pour accomplir mon but qui de rentrer chez Odoo (entreprise dans laquelle il travaille). Après lui avoir montré le programme de CF2000, il m’a conseillé et donné quelques conseils. Suite à ceux-ci, je sais que je vais devoir mettre le maximum de chance de mon côté en étant irréprochable du côté de JavaScript.</p><br>
+        </div>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exhibition.html">Exhibition</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="interview.html">Interview</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanis Lemfadli-Prefo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Yanis Lemfadli</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="MARS2.mp4" muted loop autoplay></video>
+    <div class="galerie">
+      <h3>Pictures</h3>
+
+      <div class="item"><img src="expo1.jpeg">
+      </div>
+      <div class="item"><img src="expo2.jpeg">
+      </div>
+      <div class="item"><img src="expo3.jpeg">
+      </div>
+      <div class="item"><img src="expo4.jpeg">
+      </div>
+      <div class="item"><img src="expo5.jpeg">
+      </div>
+      <div class="item"><img src="expo6.jpeg">
+      </div>
+      <div class="item"><img src="expo7.jpeg">
+      </div>
+      <div class="item"><img src="expo8.jpeg">
+      </div>
+      <div class="item"><img src="expo9.jpeg">
+      </div>
+      <div class="item"><img src="expo10.jpg">
+      </div>
+      <div class="item"><img src="expo11.jpg">
+      </div>
+      <div class="item"><img src="expo12.jpg">
+      </div>
+    </div>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exhibition.html">Exhibition</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="interview.html">Interview</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+</body>
+
+</html>
